@@ -33,8 +33,6 @@
 
 
 
-
-
   $(document).ready(function(){
     $(".total").mouseenter(function(){
       alert("Price is exclusive of tax.");
@@ -44,5 +42,11 @@
   $(document).ready(function(){
     $(".header").on("click", function(){
       $(this).hide();
+    });
+  });
+
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("h1").fadeTo(1000, 0.4);
     });
   });
